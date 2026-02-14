@@ -1,4 +1,4 @@
-# SpaceX Dashboard back-end API
+# SpaceX Dashboard API
 Back-end API for SpaceX Dashboard.
 
 SpaceX open source API:
