@@ -1,4 +1,4 @@
-# 🚀 SpaceX Launch Tracker
+# SpaceX Launch Tracker
 
 A full-stack dashboard for tracking every SpaceX rocket launch — built with React, TypeScript, and Node.js.
 
