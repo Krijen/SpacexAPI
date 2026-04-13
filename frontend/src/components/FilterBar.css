@@ -1,0 +1,63 @@
+.filter-bar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: rgba(255,255,255,0.12);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  color: var(--text-primary);
+}
+
+.filter-btn.active.filter-all {
+  border-color: var(--border-accent);
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+.filter-btn.active.filter-success {
+  border-color: rgba(52, 211, 153, 0.3);
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.filter-btn.active.filter-failed {
+  border-color: rgba(248, 113, 113, 0.3);
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.filter-btn.active.filter-upcoming {
+  border-color: rgba(251, 191, 36, 0.3);
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.filter-count {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 0.68rem;
+  min-width: 20px;
+  text-align: center;
+}
