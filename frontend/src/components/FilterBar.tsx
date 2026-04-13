@@ -1,4 +1,3 @@
-import React from 'react';
 import './FilterBar.css';
 
 export type FilterStatus = 'all' | 'success' | 'failed' | 'upcoming';
@@ -16,7 +15,7 @@ const filters: { key: FilterStatus; label: string }[] = [
   { key: 'upcoming', label: 'Upcoming' },
 ];
 
-const FilterBar: React.FC<Props> = ({ active, onChange, counts }) => {
+const FilterBar = ({ active, onChange, counts }: Props) => {
   return (
     <div className="filter-bar">
       {filters.map((f) => (

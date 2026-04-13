@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useLaunches } from '../hooks/useSpaceX';
 import LaunchCard from '../components/LaunchCard';
 import SearchBar from '../components/SearchBar';
@@ -6,7 +6,7 @@ import FilterBar, { FilterStatus } from '../components/FilterBar';
 import StatsBar from '../components/StatsBar';
 import './Dashboard.css';
 
-const Dashboard: React.FC = () => {
+const Dashboard = () => {
   const { launches, loading, error } = useLaunches();
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<FilterStatus>('all');

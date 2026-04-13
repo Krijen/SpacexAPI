@@ -1,9 +1,9 @@
-import React from 'react';
+import { Fragment } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useLaunch } from '../hooks/useSpaceX';
 import './LaunchDetail.css';
 
-const LaunchDetail: React.FC = () => {
+const LaunchDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { launch, loading, error } = useLaunch(id || '');
@@ -190,7 +190,7 @@ const LaunchDetail: React.FC = () => {
             </h2>
             <div className="info-grid">
               {launch.cores.map((core, i) => (
-                <React.Fragment key={i}>
+                <Fragment key={i}>
                   {core.reused !== null && (
                     <div className="info-card">
                       <span className="info-label">Reused</span>
@@ -219,7 +219,7 @@ const LaunchDetail: React.FC = () => {
                       </span>
                     </div>
                   )}
-                </React.Fragment>
+                </Fragment>
               ))}
             </div>
           </section>

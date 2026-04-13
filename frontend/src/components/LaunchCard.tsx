@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Launch } from '../types';
 import './LaunchCard.css';
@@ -8,7 +7,7 @@ interface Props {
   index: number;
 }
 
-const LaunchCard: React.FC<Props> = ({ launch, index }) => {
+const LaunchCard = ({ launch, index }: Props) => {
   const navigate = useNavigate();
 
   const date = new Date(launch.date_utc);

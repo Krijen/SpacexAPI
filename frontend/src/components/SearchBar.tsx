@@ -1,4 +1,3 @@
-import React from 'react';
 import './SearchBar.css';
 
 interface Props {
@@ -7,7 +6,7 @@ interface Props {
   placeholder?: string;
 }
 
-const SearchBar: React.FC<Props> = ({ value, onChange, placeholder = 'Search launches...' }) => {
+const SearchBar = ({ value, onChange, placeholder = 'Search launches...' }: Props) => {
   return (
     <div className="search-wrapper">
       <span className="search-icon">⌕</span>

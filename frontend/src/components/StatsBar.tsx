@@ -1,4 +1,3 @@
-import React from 'react';
 import { Launch } from '../types';
 import './StatsBar.css';
 
@@ -6,7 +5,7 @@ interface Props {
   launches: Launch[];
 }
 
-const StatsBar: React.FC<Props> = ({ launches }) => {
+const StatsBar = ({ launches }: Props) => {
   const total = launches.length;
   const successful = launches.filter((l) => l.success === true).length;
   const failed = launches.filter((l) => l.success === false).length;
