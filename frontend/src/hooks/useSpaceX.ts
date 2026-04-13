@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Launch } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL ?? '/api';
 
 export function useLaunches() {
   const [launches, setLaunches] = useState<Launch[]>([]);

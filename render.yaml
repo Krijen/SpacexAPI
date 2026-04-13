@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: spacex-dashboard-api
+    env: node
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: cd backend && npm start
